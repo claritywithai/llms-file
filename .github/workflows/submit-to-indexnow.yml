@@ -1,0 +1,48 @@
+name: Submit New URLs to IndexNow
+
+on:
+  schedule:
+    # Runs daily at 8:00 AM UTC. Change as needed.
+    - cron: "0 8 * * *"
+  workflow_dispatch: {}  # lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write  # needed so the workflow can commit the seen-urls record back
+
+jobs:
+  submit-indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run IndexNow submission script
+        env:
+          SITEMAP_URL: "https://claritywithai.org/sitemap.xml"
+          HOST: "claritywithai.org"
+          INDEXNOW_KEY: "3d29f2e57c0af6bfc57701004ab526d6"
+          KEY_LOCATION: "https://files.claritywithai.org/3d29f2e57c0af6bfc57701004ab526d6.txt"
+          SEEN_URLS_FILE: "indexnow-seen-urls.json"
+        run: python submit_to_indexnow.py
+
+      - name: Commit and push updated seen-urls record
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet -- "$SEEN_FILE"; then
+            git add "$SEEN_FILE"
+            git commit -m "chore: update IndexNow seen-urls record"
+            git push
+          else
+            echo "No changes to seen-urls record — nothing to commit."
+          fi
+        env:
+          SEEN_FILE: "indexnow-seen-urls.json"
