@@ -1,0 +1,45 @@
+name: Auto-Update llms.txt from Sitemap
+
+on:
+  schedule:
+    # Runs every Monday at 6:00 AM UTC. Change as needed.
+    - cron: "0 6 * * 1"
+  workflow_dispatch: {}  # lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write  # needed so the workflow can commit changes back to the repo
+
+jobs:
+  update-llms-txt:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run sitemap check script
+        env:
+          SITEMAP_URL: "https://claritywithai.org/sitemap.xml"
+          LLMS_FILE: "llms.txt"
+        run: python check_new_posts.py
+
+      - name: Commit and push if llms.txt changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet -- "$LLMS_FILE"; then
+            git add "$LLMS_FILE"
+            git commit -m "chore: auto-update llms.txt with new posts from sitemap"
+            git push
+          else
+            echo "No changes to llms.txt — nothing to commit."
+          fi
+        env:
+          LLMS_FILE: "llms.txt"
