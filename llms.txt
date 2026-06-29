@@ -1,0 +1,43 @@
+# Clarity With AI
+
+> Clarity With AI helps readers master AI tools, prompt engineering, and AI agents through honest reviews, beginner-friendly guides, and real-world workflows. The site is run by a CA (Chartered Accountant) finalist, Muhammad Faisal Gurmani, who combines accounting/finance expertise with hands-on AI tool testing — covering everything from no-code AI agent automation for accountants to AI tools for students, content creators, and stock market investors. Content is tested first-hand rather than aggregated from press releases, with an emphasis on real pricing, real workflows, and honest trade-offs.
+
+## Accounting & Finance AI
+
+- [AI Agents for Bookkeeping Automation: Small Firm Guide](https://www.claritywithai.org/2026/06/ai-agents-bookkeeping-automation-small-firms.html): No-code framework for building AI bookkeeping agents (capture, categorize, audit) using Zapier/Make/n8n with Claude or ChatGPT, including a worked case study and verified 2026 pricing.
+- [Best AI Tools for Finance & Accounting Professionals in 2026](https://www.claritywithai.org/2026/06/best-ai-tools-finance-accounting-professionals-2026.html): Tested AI tools for variance analysis, financial commentary, and accounting workflows, written from first-hand professional use.
+- [Best AI Tools for CA/Accounting Exam Students 2026](https://www.claritywithai.org/2026/06/best-ai-tools-ca-accounting-exam-students-2026.html): AI tools curated specifically for accounting and CA exam preparation.
+- [Best AI Tools for Stock Market Investors 2026](https://www.claritywithai.org/2026/06/best-ai-tools-stock-market-investors-2026.html): AI-powered tools for stock research, analysis, and portfolio tracking.
+
+## AI Agents & Automation
+
+- [How to Create an AI Agent (2026)](https://www.claritywithai.org/2026/06/how-to-create-an-ai-agent-2026.html): Foundational guide to building a no-code AI agent from scratch.
+- [Multi-Agent AI Orchestration Guide 2026](https://www.claritywithai.org/2026/06/multi-agent-ai-orchestration-guide-2026.html): How and when to move from single AI agents to coordinated multi-agent systems.
+- [AI Agents Guide for Business 2026](https://www.claritywithai.org/2026/06/ai-agents-guide-business-2026.html): Practical overview of deploying AI agents across business functions.
+- [AI Workflow Systems to Save Time 2026](https://www.claritywithai.org/2026/06/ai-workflow-system-save-time-2026.html): Building automated AI workflows for everyday productivity gains.
+
+## AI Tools & Reviews
+
+- [12 Best AI Tools for Content Creators in 2026](https://www.claritywithai.org/2026/06/best-ai-tools-content-creators-2026.html): 30+ AI tools tested and organized by content type (writing, video, podcasting).
+- [10 Best Free AI Tools for Beginners in 2026](https://www.claritywithai.org/2026/06/best-free-ai-tools-beginners-2026.html): Beginner-friendly, honestly reviewed free AI tools with no sponsored placements.
+- [Best Free AI Tools for Small Businesses](https://www.claritywithai.org/2026/06/best-free-ai-tools-small-business-2026.html): Free-tier AI tools suited to small business budgets and needs.
+- [Rytr AI Review 2026](https://www.claritywithai.org/2026/06/rytr-ai-review-2026.html): In-depth, hands-on review of the Rytr AI writing tool.
+
+## Prompt Engineering
+
+- [Prompt Engineering Guide 2026 — Get Better AI Results](https://www.claritywithai.org/2026/06/prompt-engineering-guide-better-ai-results-2026.html): Advanced prompting techniques, frameworks, and common mistakes that affect AI output quality.
+
+## Making Money with AI
+
+- [How to Make Money with AI Tools in 2026 — 10 Proven Methods](https://www.claritywithai.org/2026/06/how-to-make-money-with-ai-tools-2026.html): Realistic income methods using AI tools, with time and effort estimates.
+
+## About
+
+- [About](https://www.claritywithai.org/p/about.html): Background on the author and the site's mission.
+- [Contact](https://www.claritywithai.org/p/contact.html): How to reach the site owner.
+- [Privacy Policy](https://www.claritywithai.org/p/privacy-policy.html)
+- [Disclaimer](https://www.claritywithai.org/p/disclaimer.html)
+
+## Optional
+
+- [Sitemap](https://www.claritywithai.org/sitemap.xml): Full list of indexed pages on the site.
