@@ -27,7 +27,7 @@ jobs:
       - name: Run IndexNow submission script
         env:
           SITEMAP_URL: "https://claritywithai.org/sitemap.xml"
-          HOST: "claritywithai.org"
+          HOST: "www.claritywithai.org"
           INDEXNOW_KEY: "3d29f2e57c0af6bfc57701004ab526d6"
           KEY_LOCATION: "https://www.claritywithai.org/3d29f2e57c0af6bfc57701004ab526d6.txt"
           SEEN_URLS_FILE: "indexnow-seen-urls.json"
