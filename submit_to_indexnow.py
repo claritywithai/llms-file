@@ -17,7 +17,7 @@ import xml.etree.ElementTree as ET
 import requests
 
 SITEMAP_URL = os.environ.get("SITEMAP_URL", "https://claritywithai.org/sitemap.xml")
-HOST = os.environ.get("HOST", "claritywithai.org")
+HOST = os.environ.get("HOST", "www.claritywithai.org")
 INDEXNOW_KEY = os.environ.get("INDEXNOW_KEY", "")
 KEY_LOCATION = os.environ.get(
     "KEY_LOCATION", f"https://files.claritywithai.org/{INDEXNOW_KEY}.txt"
